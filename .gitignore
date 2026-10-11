@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+*.key
+*.pem
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+!projects/csv-expense-tracker/sample-expenses.csv

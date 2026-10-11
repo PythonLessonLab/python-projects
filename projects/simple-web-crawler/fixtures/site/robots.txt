@@ -1,0 +1,5 @@
+User-agent: PythonLessonLabCrawler
+Disallow: /private/
+
+User-agent: *
+Disallow:
