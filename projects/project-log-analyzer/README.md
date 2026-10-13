@@ -7,7 +7,21 @@ Parse lines formatted as `timestamp | level | message`, count each level, keep E
 Run a UTF-8 sample log:
 
 ```powershell
+@'
+2026-10-13T09:00:00Z | INFO | Started
+2026-10-13T09:01:00Z | ERROR | Could not open file
+malformed line
+'@ | Set-Content -Encoding utf8 sample.log
 py -3 log_analyzer.py sample.log
+```
+
+Expected report:
+
+```text
+ERROR: 1
+INFO: 1
+Skipped: 1
+Errors: Could not open file
 ```
 
 Run the tests from this directory:
