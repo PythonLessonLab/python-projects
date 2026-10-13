@@ -6,6 +6,8 @@ Runnable companion code for [PythonLessonLab](https://pythonlessonlab.com/). Eac
 | --- | --- | --- | --- |
 | CSV Expense Tracker | [Project lesson](https://pythonlessonlab.com/lessons/project-csv-expense-tracker/) | [Video](https://youtu.be/A5l-ok68lrI) | [Open folder](projects/csv-expense-tracker/) |
 | Contact Book | [Project lesson](https://pythonlessonlab.com/lessons/project-contact-book/) | [Video](https://youtu.be/bBvf1IgZLY8) | [Open folder](projects/contact-book/) |
+| Log Analyzer | [Project lesson](https://pythonlessonlab.com/lessons/project-log-analyzer/) | [Video in lesson](https://pythonlessonlab.com/lessons/project-log-analyzer/) | [Open folder](projects/project-log-analyzer/) |
+| Flashcard Quiz | [Project lesson](https://pythonlessonlab.com/lessons/project-flashcard-quiz/) | [Video in lesson](https://pythonlessonlab.com/lessons/project-flashcard-quiz/) | [Open folder](projects/project-flashcard-quiz/) |
 
 ## Advanced project: Simple Web Crawler
 
@@ -13,15 +15,18 @@ The [Simple Web Crawler tutorial and code](projects/simple-web-crawler/) use a l
 
 ## Quick start
 
-Install Python 3.10 or newer. These two projects use only the Python standard library; no package installation, API keys, accounts, or network access are required. The commands below assume `python` starts Python 3. On Windows, use `py -3` in place of `python` if `python` points to an older version.
+Install Python 3.10 or newer. The four projects in the table use only the Python standard library; no package installation, API keys, accounts, or network access are required. The commands below assume `python` starts Python 3. On Windows, use `py -3` in place of `python` if `python` points to an older version.
 
 From the repository root:
 
 ```sh
 python projects/csv-expense-tracker/expense_tracker.py
 python projects/contact-book/contact_book.py
+python projects/project-flashcard-quiz/flashcard_quiz.py
 python -m unittest discover -s projects/csv-expense-tracker -p "test_*.py"
 python -m unittest discover -s projects/contact-book -p "test_*.py"
+python -m unittest discover -s projects/project-log-analyzer -p "test_*.py"
+python -m unittest discover -s projects/project-flashcard-quiz -p "test_*.py"
 ```
 
 Read each project folder's README for the expected output and suggested changes to try.
